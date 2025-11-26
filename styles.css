@@ -1,0 +1,240 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: #e6b855;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Product grid */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* Product card */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+    margin-top: 30px;
+}
+/* Banner container */
+.shop-banner {
+    width: 100%;
+    height: 350px; /* Adjust height */
+    background-image: url('jellycat_dragon_banner.webp'); /* ← Your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.shop-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+}
+
+/* Text inside banner */
+.banner-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+}
+
+.banner-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ffb700;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.banner-btn:hover {
+    background: #ffc833;
+}
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-box {
+    margin: 15px 0;
+}
+
+.info-box h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.info-box p {
+    margin: 5px 0 0;
+}
+
+/* Social links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.social:hover {
+    color: #ff8800;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Textarea */
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Button */
+.contact-btn {
+    background: #ff8800;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #ffaa33;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+.pp{
+    color: #633c1c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+h1{
+    font-size: 44px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(255, 244, 209);             
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
